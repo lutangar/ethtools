@@ -36,19 +36,19 @@ Format a number using [numeral.js](http://numeraljs.com) formats.
 - `number` (`String|Number|BN`) - the number to format
 - `format` (`String`) - the format see [numeral.js](http://numeraljs.com) for more examples
 
-| Number    | Format       | String     |
-|-----------|--------------|------------|
-| 1000.234  | '$0,0.00'    | Ξ1,000.23  |
-| 1000.2    | '0,0[.]00 $' | 1,000.20 Ξ |
-| 1001      | '$ 0,0[.]00' | Ξ 1,001    |
-| -1000.234 | '($0,0)'     | (Ξ1,000)   |
-| -1000.234 | '$0.00'      | -Ξ1000.23  |
-| 1230974   | '($ 0.00 a)' | Ξ 1.23 m   |
-`
+| Number    | Format     | String     |
+|-----------|------------|------------|
+| 1000.234  | $0,0.00    | Ξ1,000.23  |
+| 1000.2    | 0,0[.]00 $ | 1,000.20 Ξ |
+| 1001      | $ 0,0[.]00 | Ξ 1,001    |
+| -1000.234 | ($0,0)     | (Ξ1,000)   |
+| -1000.234 | $0.00      | -Ξ1000.23  |
+| 1230974   | ($ 0.00 a) | Ξ 1.23 m   |
+
 - `unit` (`String`) - any custom unit/currencies, will replace the `$` sign
 - `options` : (`Object`) - a list of options. Currently supported options are:
-  - `etherSymbol` : (`String`) - if unit is `ether` will use this symbol for the unit instead (Ξ by default)
-  - `locale` : (`String`) - a custom locale (*en* by default)
+  - `etherSymbol` : (`String`) - if unit is `ether` will use this symbol for the unit instead (`Ξ` by default)
+  - `locale` : (`String`) - a custom locale (`en` by default)
 
 #### Example
 ```
@@ -64,7 +64,7 @@ formatNumber('1000000000000000000', '0,0.0[00]');
 
 ### fetchPrices
 
-Promise-based helper to fetch current ether price information via [cryptocompare.com public API](https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR);
+Promise-based helper to fetch current ether price information via [cryptocompare.com public API](https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD,EUR)
 
 #### Example
 ```
