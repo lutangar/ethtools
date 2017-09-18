@@ -1,6 +1,6 @@
 {
   "name": "ethtools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Formatting and value conversion for ethereum currencies.",
   "main": "index.js",
   "scripts": {
