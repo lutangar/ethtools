@@ -1,8 +1,10 @@
 # Ethereum tools
 
-> This package is an alternative of https://github.com/ethereum/meteor-package-tools for node and the browser. The API is therefore as close as possible.
+[![Build Status][travis-svg]][travis-url]
 
 Formatting and value conversion for ethereum currencies.
+
+> This package is an alternative of https://github.com/ethereum/meteor-package-tools for node and the browser. The API is therefore as close as possible.
 
 ## Installation
 
@@ -83,3 +85,6 @@ Simply clone the repo, npm install, and run npm test.
 - https://github.com/ethjs/ethjs-unit
 - http://numeraljs.com
 - https://github.com/indutny/bn.js
+
+[travis-svg]: https://travis-ci.org/larriereguichet/svg-prop-types.svg
+[travis-url]: https://travis-ci.org/larriereguichet/svg-prop-types
