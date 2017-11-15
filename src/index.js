@@ -10,5 +10,6 @@ export default {
     fetchPrices,
     formatBalance,
     formatNumber,
+    formatToken,
     toWei,
 };
